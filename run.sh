@@ -1,4 +1,5 @@
 #!/bin/sh
+pkill Xvfb #kill any hung servers.
 ./plutonium-updater -d /opt/plutonium #update the server.
 cd /opt/plutonium
-xvfb-run wine bin/plutonium-bootstrapper-win32.exe "$GAME" /opt/server -dedicated +start_map_rotate +set key "$KEY" +set net_port 4976 +set sv_config "$CONFIG"
+xvfb-run -a wine bin/plutonium-bootstrapper-win32.exe "$GAME" /opt/server -dedicated +start_map_rotate +set key "$KEY" +set net_port "$PORT" +set sv_config "$CONFIG"
