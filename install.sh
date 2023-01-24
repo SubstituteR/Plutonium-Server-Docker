@@ -5,7 +5,7 @@ echo "Enabling i386 for 32-bit packages"
 
 dpkg --add-architecture i386 && \
 apt-get update -y && \
-apt-get install wget gnupg2 software-properties-common apt-transport-https curl xvfb -y
+apt-get install wget gnupg2 software-properties-common apt-transport-https curl xvfb procps -y
 
 echo "Installing Wine"
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
