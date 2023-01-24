@@ -23,6 +23,7 @@
   <DonateLink/>
   <Requires/>
   <Config Name="Game Port" Target="4976" Default="4976" Mode="udp" Description="Maps the port used by the server for game communication to the host." Type="Port" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Server Key" Target="PORT" Default="4976" Mode="" Description="The port that the game server will use. Make sure to update the Game Port Docker Mapping!" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Server Key" Target="KEY" Default="" Mode="" Description="Your Plutonium Server Key&#13;&#10;https://platform.plutonium.pw/serverkeys" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="Plutonium Path" Target="/opt/plutonium" Default="" Mode="rw" Description="The location where the Plutonium files are installed.&#13;&#10;You can reuse the same location for multiple servers (and multiple games.) to keep installation size down. " Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Game Path" Target="/opt/server" Default="" Mode="rw" Description="The location where the Black Ops 2 Multiplayer files are located." Type="Path" Display="always" Required="true" Mask="false"></Config>
