@@ -14,7 +14,7 @@
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/SubstituteR/Plutonium-Server-Docker/main/Unraid/t5zm.png</Icon>
-  <ExtraParams>-e GAME="t5zm" -e PORT="4976"</ExtraParams>
+  <ExtraParams>-e GAME="t5sp" -e PORT="4976"</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled/>
