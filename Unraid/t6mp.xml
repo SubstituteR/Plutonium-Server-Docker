@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>plutonium-t6mp</Name>
-  <Repository>repo here</Repository>
+  <Repository>substituter/plutonium-dedicated</Repository>
   <Registry/>
   <Network/>
   <MyIP/>
