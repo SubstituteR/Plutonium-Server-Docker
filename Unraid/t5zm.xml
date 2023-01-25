@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>plutonium-t5zm</Name>
+  <Repository>substituter/plutonium-dedicated</Repository>
+  <Registry/>
+  <Network/>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Runs a Plutonium Black Ops Dedicated Zombies Server.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SubstituteR/Plutonium-Server-Docker/main/Unraid/t5zm.png</Icon>
+  <ExtraParams>-e GAME="t5zm" -e PORT="4976"</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Game Port" Target="4976" Default="4976" Mode="udp" Description="Maps the port used by the server for game communication to the host." Type="Port" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Server Key" Target="KEY" Default="" Mode="" Description="Your Plutonium Server Key&#13;&#10;https://platform.plutonium.pw/serverkeys" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="Plutonium Path" Target="/opt/plutonium" Default="" Mode="rw" Description="The location where the Plutonium files are installed.&#13;&#10;You can reuse the same location for multiple servers (and multiple games.) to keep installation size down. " Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Game Path" Target="/opt/server" Default="" Mode="rw" Description="The location where the Black Ops 2 Multiplayer files are located." Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Config File" Target="CONFIG" Default="dedicated.cfg" Mode="" Description="The configuration file to use for the server." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>
